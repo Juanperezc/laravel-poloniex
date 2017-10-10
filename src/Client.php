@@ -721,7 +721,7 @@ class Client implements ClientContract
         }
 
 
-        $mt = (int) microtime(true) * 1000;
+        $mt = (int) microtime(true) * 10000000;
         $mt += self::$nonceIteration;
 
         self::$nonceIteration++;
